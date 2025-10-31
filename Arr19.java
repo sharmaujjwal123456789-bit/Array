@@ -51,32 +51,70 @@
 // }
 
 //  maximum consecutive no. in the array
-import java.util.Scanner;
-public class Arr19{
-    public static void Maxconsecutive(int []nums){
-        int maxi=0;
-        int cnt=0;
-        for(int i=0;i<nums.length;i++){
-            if(nums[i] == 1){
-                cnt++;
-                maxi =Math.max(maxi,cnt);
-            }
-            else{
-                cnt=0;
-            }
-        }
-        System.out.println("The max no. is "+maxi);
-    }
-    public static void main(String[]args){
+// import java.util.Scanner;
+// public class Arr19{
+//     public static void Maxconsecutive(int []nums){
+//         int maxi=0;
+//         int cnt=0;
+//         for(int i=0;i<nums.length;i++){
+//             if(nums[i] == 1){
+//                 cnt++;
+//                 maxi =Math.max(maxi,cnt);
+//             }
+//             else{
+//                 cnt=0;
+//             }
+//         }
+//         System.out.println("The max no. is "+maxi);
+//     }
+//     public static void main(String[]args){
      
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []nums=new int[n];
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int []nums=new int[n];
 
-        System.out.println("Enter the "+n+"elements");
-        for(int i=0;i<n;i++){
-            nums[i]=sc.nextInt();
-        }
-        Maxconsecutive(nums);
-    }
-}
+//         System.out.println("Enter the "+n+"elements");
+//         for(int i=0;i<n;i++){
+//             nums[i]=sc.nextInt();
+//         }
+//         Maxconsecutive(nums);
+//     }
+// }
+
+
+//  finsd the number that appear once and the other twice 
+//  brute force approach 
+// import java.util.Scanner;
+// public class Arr19{
+
+//     public static void nonrep(int []arr, int n){
+//         int cnt;
+//         int num;
+//        for(int i=0;i<arr.length;i++){
+//         num=arr[i];
+//         cnt=0;
+        
+//         for(int j=0;j<arr.length;j++){
+//             if(arr[j]==num){
+//                 cnt++;
+//             }
+//         }
+//          if(cnt==1){
+//                 System.out.println("the non repeating no. is "+num);
+//             }
+//        }    
+//     }
+//     public static void main(String[] args){
+
+//         Scanner sc=new Scanner(System.in);
+//         int n= sc.nextInt();
+
+//         int []arr=new int[n];
+//         System.out.println("Eneter the"+n+"integer ");
+
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         nonrep(arr,n);
+//     }
+// }
