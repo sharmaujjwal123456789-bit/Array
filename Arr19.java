@@ -118,3 +118,26 @@
 //         nonrep(arr,n);
 //     }
 // }
+
+//  optimal approach for number that appear once 
+import java.util.Scanner;
+public class Arr19{
+    public static void getSingle(int []arr,int n){
+        int xor=0;
+        for(int i=0;i<arr.length;i++){
+            xor=xor^arr[i];
+        }
+        System.out.println(xor);
+    }
+    public static void main(String[] args){
+  Scanner sc= new Scanner(System.in);
+  int n =sc.nextInt();
+  int []arr=new int[n];
+
+  System.out.println("Enter the"+n+"Integer ");
+  for(int i=0;i<n;i++){
+    arr[i]=sc.nextInt();
+  }
+  getSingle(arr,n);
+    }
+}
