@@ -321,10 +321,8 @@
     //         }
     //         ArrayList<Integer> result=inter(a,b);
     //         System.out.println(result);
-
-            
-
     //      }
     // }
 
 
+   

@@ -179,3 +179,49 @@
 //         System.out.println("the single element is"+ result);
 //     }
 // }
+
+
+ // longest subarray with sum k
+
+    import java.util.ArrayList;
+    import java.util.Scanner;
+    public class Arr19{
+    public static int LongestSubArraywithSum(ArrayList<Integer> arr,int n,long k){
+        int left=0;
+        int right=0;
+        long sum=arr.get(0);
+        int maxLen=0;
+        while(right<n){
+            while(left <= right && sum>k){
+                sum -= arr.get(left);
+                left++;
+            }
+            if(sum == k){
+                maxLen = Math.max(maxLen, right -left +1);
+            }
+            right++;
+            if(right < n){
+                sum +=arr.get(right);
+            }
+        }
+            return maxLen;
+    }
+        public static void main(String[] args){
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the size of array");
+            int n=sc.nextInt();
+            ArrayList<Integer> arr=new ArrayList<>();
+
+
+            System.out.println("Enter the integer ");
+            for(int i=0;i<n;i++){
+              arr.add(sc.nextInt());
+            }
+
+            System.out.println("Enter the sum for the aaray");
+            long k =sc.nextInt();
+
+            int result=LongestSubArraywithSum(arr,n,k);
+            System.out.println(result);
+        }
+    }
