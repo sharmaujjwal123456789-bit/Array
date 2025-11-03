@@ -183,45 +183,90 @@
 
  // longest subarray with sum k
 
-    import java.util.ArrayList;
-    import java.util.Scanner;
-    public class Arr19{
-    public static int LongestSubArraywithSum(ArrayList<Integer> arr,int n,long k){
-        int left=0;
-        int right=0;
-        long sum=arr.get(0);
-        int maxLen=0;
-        while(right<n){
-            while(left <= right && sum>k){
-                sum -= arr.get(left);
-                left++;
-            }
-            if(sum == k){
-                maxLen = Math.max(maxLen, right -left +1);
-            }
-            right++;
-            if(right < n){
-                sum +=arr.get(right);
-            }
-        }
-            return maxLen;
-    }
-        public static void main(String[] args){
-            Scanner sc=new Scanner(System.in);
-            System.out.println("Enter the size of array");
-            int n=sc.nextInt();
-            ArrayList<Integer> arr=new ArrayList<>();
+    // import java.util.ArrayList;
+    // import java.util.Scanner;
+    // public class Arr19{
+    // public static int LongestSubArraywithSum(ArrayList<Integer> arr,int n,long k){
+    //     int left=0;
+    //     int right=0;
+    //     long sum=arr.get(0);
+    //     int maxLen=0;
+    //     while(right<n){
+    //         while(left <= right && sum>k){
+    //             sum -= arr.get(left);
+    //             left++;
+    //         }
+    //         if(sum == k){
+    //             maxLen = Math.max(maxLen, right -left +1);
+    //         }
+    //         right++;
+    //         if(right < n){
+    //             sum +=arr.get(right);
+    //         }
+    //     }
+    //         return maxLen;
+    // }
+    //     public static void main(String[] args){
+    //         Scanner sc=new Scanner(System.in);
+    //         System.out.println("Enter the size of array");
+    //         int n=sc.nextInt();
+    //         ArrayList<Integer> arr=new ArrayList<>();
 
 
-            System.out.println("Enter the integer ");
-            for(int i=0;i<n;i++){
-              arr.add(sc.nextInt());
-            }
+    //         System.out.println("Enter the integer ");
+    //         for(int i=0;i<n;i++){
+    //           arr.add(sc.nextInt());
+    //         }
 
-            System.out.println("Enter the sum for the aaray");
-            long k =sc.nextInt();
+    //         System.out.println("Enter the sum for the aaray");
+    //         long k =sc.nextInt();
 
-            int result=LongestSubArraywithSum(arr,n,k);
-            System.out.println(result);
-        }
-    }
+    //         int result=LongestSubArraywithSum(arr,n,k);
+    //         System.out.println(result);
+    //     }
+    // }
+
+
+
+    //  it works for negative also not understandable by me at later
+// import java.util.*;
+
+// public class Arr19 {
+//     public static int longestSubarrayWithSumK(int[] a, long k) {
+//         Map<Long, Integer> preSumMap = new HashMap<>();
+//         long sum = 0;
+//         int maxLen = 0;
+
+//         for (int i = 0; i < a.length; i++) {
+//             sum += a[i];
+
+//             // Case 1: subarray from index 0 to i
+//             if (sum == k) {
+//                 maxLen = Math.max(maxLen, i + 1);
+//             }
+
+//             long rem = sum - k;
+
+//             // Case 2: subarray from previous sum to current index
+//             if (preSumMap.containsKey(rem)) {
+//                 int len = i - preSumMap.get(rem);
+//                 maxLen = Math.max(maxLen, len);
+//             }
+
+//             // Store first occurrence of sum
+//             if (!preSumMap.containsKey(sum)) {
+//                 preSumMap.put(sum, i);
+//             }
+//         }
+
+//         return maxLen;
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 1, 1, 1, 1};
+//         long k = 3;
+//         System.out.println(longestSubarrayWithSumK(arr, k)); // Example output
+//     }
+// }
+
+
