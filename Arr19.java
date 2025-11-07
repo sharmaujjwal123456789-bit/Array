@@ -119,6 +119,7 @@
 //     }
 // }
 
+
 //  optimal approach for number that appear once 
 // import java.util.Scanner;
 // public class Arr19{
