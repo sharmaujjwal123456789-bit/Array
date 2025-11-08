@@ -27,6 +27,7 @@
 
 // optimal approach
 
+
 // import java.util.Scanner;
 
 // public class Arr17 {
