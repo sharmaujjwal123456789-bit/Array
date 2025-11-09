@@ -230,44 +230,44 @@
 
 
     //  it works for negative also not understandable by me at later
-import java.util.*;
+// import java.util.*;
 
-public class Arr19 {
-    public static int longestSubarrayWithSumK(int[] a, long k) {
-        Map<Long, Integer> preSumMap = new HashMap<>();
-        long sum = 0;
-        int maxLen = 0;
+// public class Arr19 {
+//     public static int longestSubarrayWithSumK(int[] a, long k) {
+//         Map<Long, Integer> preSumMap = new HashMap<>();
+//         long sum = 0;
+//         int maxLen = 0;
 
-        for (int i = 0; i < a.length; i++) {
-            sum += a[i];
+//         for (int i = 0; i < a.length; i++) {
+//             sum += a[i];
 
-            // Case 1: subarray from index 0 to i
-            if (sum == k) {
-                maxLen = Math.max(maxLen, i + 1);
-            }
+//             // Case 1: subarray from index 0 to i
+//             if (sum == k) {
+//                 maxLen = Math.max(maxLen, i + 1);
+//             }
 
-            long rem = sum - k;
+//             long rem = sum - k;
 
-            // Case 2: subarray from previous sum to current index
-            if (preSumMap.containsKey(rem)) {
-                int len = i - preSumMap.get(rem);
-                maxLen = Math.max(maxLen, len);
-            }
+//             // Case 2: subarray from previous sum to current index
+//             if (preSumMap.containsKey(rem)) {
+//                 int len = i - preSumMap.get(rem);
+//                 maxLen = Math.max(maxLen, len);
+//             }
 
-            // Store first occurrence of sum
-            if (!preSumMap.containsKey(sum)) {
-                preSumMap.put(sum, i);
-            }
-        }
+//             // Store first occurrence of sum
+//             if (!preSumMap.containsKey(sum)) {
+//                 preSumMap.put(sum, i);
+//             }
+//         }
 
-        return maxLen;
-    }
+//         return maxLen;
+//     }
 
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 1, 1, 1, 1};
-        long k = 8;
-        System.out.println(longestSubarrayWithSumK(arr, k)); // Example output
-    }
-}
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 1, 1, 1, 1};
+//         long k = 8;
+//         System.out.println(longestSubarrayWithSumK(arr, k)); // Example output
+//     }
+// }
 
 
