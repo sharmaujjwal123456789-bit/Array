@@ -43,47 +43,44 @@
 
 //  using without the dynamic aaray
 
-import java.util.*;
-public class Arr30{
-    public static void zeroMatrix(int [][] matrix){
-        int n =matrix.length;  // for rows
-        int m = matrix[0].length;  // for columns
+// import java.util.*;
+// public class Arr30{
+//     public static void zeroMatrix(int [][] matrix){
+//         int n =matrix.length;  // for rows
+//         int m = matrix[0].length;  // for columns
         
-        int []row = new int[n];
-        int []col = new int[m];
+//         int []row = new int[n];
+//         int []col = new int[m];
 
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                if(matrix[i][j] == 0){
-                    row[i] =1;
-                    col[j] =1;
-                }
-            }
-        }
+//         for(int i=0;i<n;i++){
+//             for(int j=0;j<n;j++){
+//                 if(matrix[i][j] == 0){
+//                     row[i] =1;
+//                     col[j] =1;
+//                 }
+//             }
+//         }
 
-        for(int i=0; i<n;i++){
-            for(int j=0; j<m ;j++){
-                if(row[i] == 1  || col[j] ==1){
-                    matrix[i][j] = 0;
-                }
-            }
-        }
-    }
+//         for(int i=0; i<n;i++){
+//             for(int j=0; j<m ;j++){
+//                 if(row[i] == 1  || col[j] ==1){
+//                     matrix[i][j] = 0;
+//                 }
+//             }
+//         }
+//     }
 
-    public static void main(String[] args){
- int [][] matrix= {
-     {1,2,3},
-     {4,0,5},
-     {6,7,8},
- };
+//   public static void main(String[] args){
+//  int [][] matrix= {
+//      {1,2,3},
+//      {4,0,5},
+//      {6,7,8},
+//  };
 
-
-   zeroMatrix(matrix);
-
-   for(int i=0;i<matrix.length ;i++){
-    System.out.println(Arrays.toString(matrix[i]));
-   }
-
-    }
-}
+//    zeroMatrix(matrix);
+//    for(int i=0;i<matrix.length ;i++){
+//     System.out.println(Arrays.toString(matrix[i]));
+//    }
+//     }
+// }
