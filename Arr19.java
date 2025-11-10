@@ -250,7 +250,7 @@
 
 //             // Case 2: subarray from previous sum to current index
 //             if (preSumMap.containsKey(rem)) {
-//                 int len = i - preSumMap.get(rem);
+//                 int len = i - preSumMap.get(rem); 
 //                 maxLen = Math.max(maxLen, len);
 //             }
 
