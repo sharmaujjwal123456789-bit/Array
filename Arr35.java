@@ -17,7 +17,7 @@
 //                 if(cnt > arr.length/3){
 //                     ans.add(arr[i]);
 //                 }
-//                 if(ans.size() == 2){
+//                 if(ans.size() == 2){      
 //                     break;
 //                 }
 //             }
@@ -44,6 +44,7 @@
 // }
 
 
+//  in simple array  arr.length is used while in arrayList arr.size() is used 
 //  better approach using hash map
 // import java.util.*;
 // public class Arr35{
@@ -72,6 +73,7 @@
 //         Scanner sc =new Scanner(System.in);
 //         System.out.println("Enter the size of array");
 //         int n= sc.nextInt();
+
 //         ArrayList<Integer> a=new ArrayList<>();
 //         System.out.println("Enter the element of array");
 //         for(int i=0;i<n;i++){

@@ -74,7 +74,7 @@
 //                 i++;
 //             }
 //         }
-//         return i+1;
+//         return i;
 //       }
 
 //  public static void main(String[]args){
@@ -90,7 +90,7 @@
 //         }
 //           int newLength = duplicate(arr, n);
 //         System.out.println("Array after removing duplicates:");
-//         for (int i = 0; i < newLength; i++) {
+//         for (int i = 0; i <= newLength; i++) {
 //             System.out.print(arr[i] +" ");
 //         }
 //         System.out.println();
