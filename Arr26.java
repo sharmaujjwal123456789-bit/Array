@@ -66,7 +66,7 @@
 //             pos.add(a.get(i));
 //           }else{
 //             neg.add(a.get(i));
-//           }i
+//           }
 //         }
    
 //         int[] ans=new int[n];

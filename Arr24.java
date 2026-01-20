@@ -42,7 +42,7 @@
 //          }
 //         }
 
-//         System.out.print("Maximum subarray is"+ maxi);
+//         System.out.print("Maximum subarray sum is"+ maxi);
 //     }
 // }
 

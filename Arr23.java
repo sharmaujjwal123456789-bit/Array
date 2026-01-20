@@ -18,7 +18,7 @@
 //      }
 //      public static void main(String[] args){
 //           int []a={1,2,3,1,1,1,1,2,2,4,1,1,1,1};
-//         System.out.print(MajorityElement(a));
+//         System.out.print(MajorityElement(a));+-
 //      }
 // }
  
