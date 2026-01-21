@@ -1,3 +1,71 @@
+//  import java.util.*;
+// public class Arr30{
+
+//      static void  Markcol(int j,int[][] arr){
+//                 for(int i=0;i<arr.length;i++){
+//                     if(arr[i][j] != 0){
+//                         arr[i][j] = -1;
+//                     }
+//                 }
+//             }
+
+    
+//         static void Markrow(int i, int[][] arr){
+//             for(int j=0;j<arr[0].length;j++){
+//                 if(arr[i][j] != 0){
+//                     arr[i][j] = -1;
+//                 }
+//             }
+//         }
+
+
+//     public static int [][]Mzero(int [][]arr){
+
+//         int m= arr.length;
+//         int n= arr[0].length;
+
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 if(arr[i][j] == 0){
+//                     Markrow(i , arr);
+//                     Markcol(j , arr);
+//                 }
+//             }
+//         }
+    
+
+//                 for(int i=0;i<m;i++){
+//                     for(int j=0;j<n;j++){
+//                         if(arr[i][j] == -1){
+//                             arr[i][j] = 0;
+//                         }
+//                     }
+//                 }
+
+//             return arr;
+//             }
+//     public static void main(String []args){
+//     // Scanner sc=new Scanner(System.in);
+    
+//     int [][]arr={
+//         {1,1,1,1},
+//         {1,0,0,1},
+//         {1,1,0,1},
+//         {1,1,1,1}
+//     };
+//     int [][]matrix= Mzero(arr);
+    
+//     for(int i =0;i< matrix.length;i++){
+//         for(int j=0;j<matrix[0].length;j++){
+//             System.out.print(matrix[i][j] + " ");
+//         }
+//         System.out.println();
+//     }
+//   }
+// }
+
+
+
 //  better approach for set matrix zero using dynamic array
 // import java.util.*;
 // public class Arr30 {
@@ -15,6 +83,7 @@
 //                 row[i] = 1;
 //                 col[j] = 1;
 //             }
+
 //         }
 //       }
 //       for(int i=0; i<n; i++){
