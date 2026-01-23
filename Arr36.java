@@ -86,6 +86,8 @@
 // }
 
 
+// better approach
+
 // import java.util.*;
 // public class Arr36{
 // public static ArrayList<ArrayList<Integer>> triplet(int n,ArrayList<Integer> nums){
@@ -245,7 +247,7 @@
 
 //         for (int i = 0; i < n; i++) {
 
-//             // skip duplicate i
+//             // skip duplicate i   nums[i] == nums[i-1]
 //             if (i > 0 && nums.get(i).equals(nums.get(i - 1)))
 //                 continue;
 
@@ -306,7 +308,7 @@
 //         ArrayList<ArrayList<Integer>> result = triplet(n, nums);
 
 //         System.out.println("Triplets with sum 0:");
-//         for (ArrayList<Integer> list : result) {
+//         for (ArrayList<Integer> list : result) { 
 //             System.out.println(list);
 //         }
 //     }
