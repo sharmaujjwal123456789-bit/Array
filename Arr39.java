@@ -54,37 +54,37 @@
 
 //  optimal approach
 
-import java.util.*;
-public class Arr39{
-    public static ArrayList<ArrayList<Integer>> mergeOverlap(ArrayList<ArrayList<Integer>> arr){
-        // int n = arr.size();
+// import java.util.*;
+// public class Arr39{
+//     public static ArrayList<ArrayList<Integer>> mergeOverlap(ArrayList<ArrayList<Integer>> arr){
+//         // int n = arr.size();
 
-        Collections.sort(arr, (a,b) -> a.get(0) - b.get(0));
+//         Collections.sort(arr, (a,b) -> a.get(0) - b.get(0));
 
-        ArrayList<ArrayList<Integer>> ans= new ArrayList<>();
+//         ArrayList<ArrayList<Integer>> ans= new ArrayList<>();
 
-        for(int i=0;i<arr.size();i++){
+//         for(int i=0;i<arr.size();i++){
             
-            if(ans.isEmpty() || arr.get(i).get(0) > ans.get(ans.size() - 1).get(1)){
-                ans.add(arr.get(i));
-            }else{
-                int lastEnd = ans.get(ans.size()-1).get(1);
-                int currEnd = arr.get(i).get(1);
+//             if(ans.isEmpty() || arr.get(i).get(0) > ans.get(ans.size() - 1).get(1)){
+//                 ans.add(arr.get(i));
+//             }else{
+//                 int lastEnd = ans.get(ans.size()-1).get(1);
+//                 int currEnd = arr.get(i).get(1);
 
-                ans.get(ans.size() - 1).set(1 , Math.max(lastEnd,currEnd));
-            }
-        }
-        return ans;
-    }
+//                 ans.get(ans.size() - 1).set(1 , Math.max(lastEnd,currEnd));
+//             }
+//         }
+//         return ans;
+//     }
 
-    public static void main(String[] args){
-        ArrayList<ArrayList<Integer>> arr= new ArrayList<>();
+//     public static void main(String[] args){
+//         ArrayList<ArrayList<Integer>> arr= new ArrayList<>();
 
-        arr.add(new ArrayList<>(Arrays.asList(1,3)));
-        arr.add(new ArrayList<>(Arrays.asList(2,4)));
-        arr.add(new ArrayList<>(Arrays.asList(3,5)));
-        arr.add(new ArrayList<>(Arrays.asList(6,7)));
+//         arr.add(new ArrayList<>(Arrays.asList(1,3)));
+//         arr.add(new ArrayList<>(Arrays.asList(2,4)));
+//         arr.add(new ArrayList<>(Arrays.asList(3,5)));
+//         arr.add(new ArrayList<>(Arrays.asList(6,7)));
 
-        System.out.println(mergeOverlap(arr));
-    }
-}
+//         System.out.println(mergeOverlap(arr));
+//     }
+// }
